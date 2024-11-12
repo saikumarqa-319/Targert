@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [FashionSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="sportspageTest(failed)">
+    <parameter name="BrowserName" value="Chrome"/>
+    <classes>
+      <class name="com.TestClasses.SportsPageTest">
+        <methods>
+          <include name="driversetup"/>
+          <include name="tearDown"/>
+          <include name="launchapp"/>
+        </methods>
+      </class> <!-- com.TestClasses.SportsPageTest -->
+    </classes>
+  </test> <!-- sportspageTest(failed) -->
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <parameter name="BrowserName" value="Chrome"/>
+    <classes>
+      <class name="com.TestClasses.FashionPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchapp"/>
+          <include name="driversetup"/>
+        </methods>
+      </class> <!-- com.TestClasses.FashionPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="BrowserName" value="Edge"/>
+    <classes>
+      <class name="com.TestClasses.FashionPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchapp"/>
+          <include name="driversetup"/>
+        </methods>
+      </class> <!-- com.TestClasses.FashionPageTest -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [FashionSuite] -->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="FashionSuite">
+  <test name="ChromeTest">
+        <parameter name="BrowserName" value="Chrome"/>
+        <classes>
+            <class name="com.test.FashionPageTest"/>
+        </classes>
+    </test>
+
+    <test name="EdgeTest">
+        <parameter name="BrowserName" value="Edge"/>
+        <classes>
+            <class name="com.test.FashionPageTest"/>
+        </classes>
+    </test>
+  
+  
+ 
+  
+ 
+</suite> <!-- FashionSuite -->
